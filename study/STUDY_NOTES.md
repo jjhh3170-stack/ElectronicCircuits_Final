@@ -18,6 +18,18 @@
 - In = AE·q·Dn·dnp/dx = −AE·q·Dn·np(0)/W  (음수 = 전류가 −x 방향, 컬렉터→이미터)
 - IS = AE·q·Dn·ni²/(NA·W)   [교재 보충]
 
+### In 식 유도 (슬라이드 11)
+- Fick: 전자 flux F = −Dn·dn/dx,  전류밀도 Jn = (−q)·F = q·Dn·dn/dx
+- In = AE·q·Dn·dnp/dx,  직선 분포 np(0) → np(W)=0 이므로 dnp/dx = −np(0)/W
+- 음수 = 전류는 −x 방향 (컬렉터→이미터), 전자 이동과 반대. 크기 iC = AE·q·Dn·np(0)/W
+
+### 확인문제 (W9-1)
+1. vBE=0.7, vCB=−0.3 → 정의상 EBJ·CBJ 모두 순방향 = saturation
+   (교재 4.1.4: CBJ 순방향 0.4 V 이하면 사실상 active처럼 동작, 15번 PDF에서 다룸)
+2. β=50 → α=50/51≈0.980, iE=1 mA → iC≈0.980 mA, iB=iE/(β+1)≈19.6 μA
+3. W 절반 → IS 2배 (IS ∝ 1/W).  iC 2배, iB1 그대로, iB2(=Qn/τb, Qn ∝ W) 절반
+   → β는 2배 이상 증가 (β 식의 첫 항 1/2배, 둘째 항 1/4배)
+
 ### 교재 보충: β를 결정하는 것
 - iB1 (베이스→이미터 정공 주입) = AE·q·Dp·ni²/(ND·Lp) · e^(vBE/VT)
 - iB2 (베이스 재결합) = Qn/τb,  Qn = AE·q·W·np(0)/2
