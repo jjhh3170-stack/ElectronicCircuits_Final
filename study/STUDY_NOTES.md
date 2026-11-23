@@ -44,6 +44,14 @@
 - IS = AE·q·Dn·np0/W = AE·q·Dn·ni²/(W·NA)
 - W에 반비례, AE에 비례, 온도에 민감(5℃마다 2배). AE 2배 → IS·iC 2배 (current scaling)
 
+### 보충: np0와 ni 온도식 (교재 1장)
+- 질량작용 법칙: n·p = ni²(열평형). p형 베이스는 pp0≈NA → np0 = ni²/NA
+- IS = AE·q·Dn·ni²/(W·NA) 에서 ni²는 np0=ni²/NA 대입으로 등장
+- ni 온도 의존: ni² = B·T³·e^(−Eg/(kT))   (Si: Eg≈1.12eV, B≈7.3e15, k=8.62e-5 eV/K)
+  - 지배항 e^(−Eg/kT): 밴드갭을 열로 넘는 효과, 온도에 지수적 민감
+  - T³: 상태밀도 효과(보조)
+  - IS ∝ ni² → BJT 전류 온도 민감(5℃마다 ≈2배), VBE ≈ −2mV/℃
+
 ### 대신호 등가모델 4종 (Fig 4.5) — 내용 동일, 표현만 다름
 - (a) 전압제어, common-base: DE(IS/α), iC=IS·e^(vBE/VT)
 - (b) 전류제어, common-base: DE, iC=α·iE
